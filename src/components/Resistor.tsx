@@ -12,7 +12,7 @@ const Resistor: React.FC<ResistorProps> = ({ value, position, onDragStop }) => {
   return (
     <Draggable
       position={position}
-      onStop={(e, data) => onDragStop(data)}
+      onStop={(_, data) => onDragStop(data)}
       bounds="parent"
     >
       <Box
